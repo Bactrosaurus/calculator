@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     implementation(compose.desktop.currentOs)
-    implementation("org.mariuszgromada.math:MathParser.org-mXparser:5.1.0")
+    implementation("org.mariuszgromada.math:MathParser.org-mXparser:5.2.1")
 }
 
 compose.desktop {
