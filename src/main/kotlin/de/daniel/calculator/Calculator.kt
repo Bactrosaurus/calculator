@@ -16,6 +16,7 @@ import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 import de.daniel.calculator.ui.Buttons
 import de.daniel.calculator.ui.ExpressionField
+import org.mariuszgromada.math.mxparser.License
 
 var expression by mutableStateOf(TextFieldValue(""))
 
@@ -28,6 +29,7 @@ fun Calculator() = MaterialTheme {
 }
 
 fun main() = application {
+    License.iConfirmNonCommercialUse("Bactrosaurus")
     Window(
         onCloseRequest = ::exitApplication,
         title = "Calculator",
